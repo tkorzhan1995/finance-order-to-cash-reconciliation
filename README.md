@@ -1,7 +1,8 @@
 # Automated Order-to-Cash & Refund Reconciliation (Retail Finance)
 
-## Problem
+Exception-based order-to-cash finance automation using SQL and Python, reconciling orders, refunds, PSP cash, and general ledger with full audit trail.
 
+## Problem
 Retail finance teams struggle to reconcile orders, refunds, PSP settlements, and GL postings due to:
 - Timing differences
 - Partial refunds and returns
@@ -11,17 +12,13 @@ Retail finance teams struggle to reconcile orders, refunds, PSP settlements, and
 This results in delayed close, manual corrections, and limited daily visibility.
 
 ## Solution
-
 This project demonstrates an automated, audit-proof order-to-cash reconciliation framework using SQL and Python.
-
-Exception-based reconciliation system for matching retail orders, refunds, PSP settlements, and GL entries with full audit trail.
 
 ### Key Features
 - SQL-based population definition and matching logic
 - Tolerance and settlement window handling
 - End-to-end reconciliation: Orders → Refunds → PSP Cash → General Ledger
 - Daily exception queue with drill-down
-- Exception-based processing - finance teams only work on exceptions, not full populations
 - No black-box automation — full traceability
 
 ## Architecture
@@ -169,6 +166,16 @@ Exception Breakdown:
 Reconciliation complete!
 ```
 
+## Output
+
+The system produces a daily exception report highlighting:
+- Pending settlements
+- Partial refund mismatches
+- Missing or duplicate GL postings
+- Timing-related differences
+
+Finance teams only work on exceptions — not full populations.
+
 ## Exception Types
 
 The system identifies and classifies these exception types:
@@ -258,12 +265,17 @@ Edit `python/exception_classifier.py` to:
 - Add business-specific rules
 
 ## Controls & Auditability
-
 - No automatic posting to ERP
 - All calculations reproducible
 - Source transaction IDs preserved
 - Review and approval ready
-- Complete audit trail from order to GL entry
+
+## Tech Stack
+- SQL (reconciliation logic)
+- Python (classification & reporting)
+- CSV inputs (ERP-agnostic demo)
+
+This mirrors real-world retail finance automation patterns.
 
 ## Troubleshooting
 
@@ -281,14 +293,6 @@ Edit `python/exception_classifier.py` to:
 - Ensure pandas is installed: `pip install pandas`
 - Verify Python version is 3.8+
 - Check you're running from correct directory
-
-## Tech Stack
-
-- SQL (reconciliation logic)
-- Python (classification & reporting)
-- CSV inputs (ERP-agnostic demo)
-
-This mirrors real-world retail finance automation patterns.
 
 ## Contributing
 
