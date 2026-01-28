@@ -1,0 +1,34 @@
+gl_entry_id,entry_date,entry_timestamp,account_code,account_name,debit_amount,credit_amount,reference_id,reference_type,description
+GL-2024-001,2024-01-15,2024-01-15 10:23:45,1100,Accounts Receivable,125.50,0.00,ORD-2024-001,order,Customer order revenue
+GL-2024-002,2024-01-15,2024-01-15 10:23:45,4100,Sales Revenue,0.00,125.50,ORD-2024-001,order,Customer order revenue
+GL-2024-003,2024-01-15,2024-01-15 11:45:22,1100,Accounts Receivable,89.99,0.00,ORD-2024-002,order,Customer order revenue
+GL-2024-004,2024-01-15,2024-01-15 11:45:22,4100,Sales Revenue,0.00,89.99,ORD-2024-002,order,Customer order revenue
+GL-2024-005,2024-01-15,2024-01-15 14:30:10,1100,Accounts Receivable,250.00,0.00,ORD-2024-003,order,Customer order revenue
+GL-2024-006,2024-01-15,2024-01-15 14:30:10,4100,Sales Revenue,0.00,250.00,ORD-2024-003,order,Customer order revenue
+GL-2024-007,2024-01-16,2024-01-16 09:15:33,1100,Accounts Receivable,45.75,0.00,ORD-2024-004,order,Customer order revenue
+GL-2024-008,2024-01-16,2024-01-16 09:15:33,4100,Sales Revenue,0.00,45.75,ORD-2024-004,order,Customer order revenue
+GL-2024-009,2024-01-16,2024-01-16 10:20:15,1100,Accounts Receivable,310.25,0.00,ORD-2024-005,order,Customer order revenue
+GL-2024-010,2024-01-16,2024-01-16 10:20:15,4100,Sales Revenue,0.00,310.25,ORD-2024-005,order,Customer order revenue
+GL-2024-011,2024-01-16,2024-01-16 13:45:00,1100,Accounts Receivable,67.80,0.00,ORD-2024-006,order,Customer order revenue
+GL-2024-012,2024-01-16,2024-01-16 13:45:00,4100,Sales Revenue,0.00,67.80,ORD-2024-006,order,Customer order revenue
+GL-2024-013,2024-01-17,2024-01-17 08:30:22,1100,Accounts Receivable,199.99,0.00,ORD-2024-007,order,Customer order revenue
+GL-2024-014,2024-01-17,2024-01-17 08:30:22,4100,Sales Revenue,0.00,199.99,ORD-2024-007,order,Customer order revenue
+GL-2024-015,2024-01-17,2024-01-17 15:10:45,1100,Accounts Receivable,420.50,0.00,ORD-2024-008,order,Customer order revenue
+GL-2024-016,2024-01-17,2024-01-17 15:10:45,4100,Sales Revenue,0.00,420.50,ORD-2024-008,order,Customer order revenue
+GL-2024-017,2024-01-18,2024-01-18 11:25:30,1100,Accounts Receivable,78.25,0.00,ORD-2024-009,order,Customer order revenue
+GL-2024-018,2024-01-18,2024-01-18 11:25:30,4100,Sales Revenue,0.00,78.25,ORD-2024-009,order,Customer order revenue
+GL-2024-019,2024-01-18,2024-01-18 16:40:12,1100,Accounts Receivable,155.00,0.00,ORD-2024-010,order,Customer order revenue
+GL-2024-020,2024-01-18,2024-01-18 16:40:12,4100,Sales Revenue,0.00,155.00,ORD-2024-010,order,Customer order revenue
+GL-2024-021,2024-01-17,2024-01-17 08:00:00,1000,Bank Account,121.74,0.00,SETT-2024-001,settlement,PSP settlement received
+GL-2024-022,2024-01-17,2024-01-17 08:00:00,1100,Accounts Receivable,0.00,125.50,SETT-2024-001,settlement,PSP settlement received
+GL-2024-023,2024-01-17,2024-01-17 08:00:00,5200,Payment Processing Fees,3.76,0.00,SETT-2024-001,settlement,PSP settlement fees
+GL-2024-024,2024-01-17,2024-01-17 08:00:00,1000,Bank Account,242.50,0.00,SETT-2024-002,settlement,PSP settlement received
+GL-2024-025,2024-01-17,2024-01-17 08:00:00,1100,Accounts Receivable,0.00,250.00,SETT-2024-002,settlement,PSP settlement received
+GL-2024-026,2024-01-17,2024-01-17 08:00:00,5200,Payment Processing Fees,7.50,0.00,SETT-2024-002,settlement,PSP settlement fees
+GL-2024-027,2024-01-18,2024-01-18 08:00:00,1000,Bank Account,300.94,0.00,SETT-2024-003,settlement,PSP settlement received
+GL-2024-028,2024-01-18,2024-01-18 08:00:00,1100,Accounts Receivable,0.00,310.25,SETT-2024-003,settlement,PSP settlement received
+GL-2024-029,2024-01-18,2024-01-18 08:00:00,5200,Payment Processing Fees,9.31,0.00,SETT-2024-003,settlement,PSP settlement fees
+GL-2024-030,2024-01-16,2024-01-16 14:20:00,4100,Sales Revenue,89.99,0.00,REF-2024-001,refund,Customer refund
+GL-2024-031,2024-01-16,2024-01-16 14:20:00,1100,Accounts Receivable,0.00,89.99,REF-2024-001,refund,Customer refund
+GL-2024-032,2024-01-17,2024-01-17 10:30:15,4100,Sales Revenue,45.75,0.00,REF-2024-002,refund,Customer refund
+GL-2024-033,2024-01-17,2024-01-17 10:30:15,1100,Accounts Receivable,0.00,45.75,REF-2024-002,refund,Customer refund

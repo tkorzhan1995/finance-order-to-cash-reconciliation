@@ -1,0 +1,4 @@
+refund_id,order_id,refund_date,refund_timestamp,refund_amount,refund_reason,status
+REF-2024-001,ORD-2024-002,2024-01-16,2024-01-16 14:20:00,89.99,customer_request,processed
+REF-2024-002,ORD-2024-004,2024-01-17,2024-01-17 10:30:15,45.75,damaged_goods,processed
+REF-2024-003,ORD-2024-006,2024-01-18,2024-01-18 09:45:30,67.80,wrong_item,processed
