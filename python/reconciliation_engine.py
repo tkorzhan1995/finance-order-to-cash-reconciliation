@@ -85,7 +85,8 @@ class ReconciliationEngine:
         total = len(df)
         print(f"  Matched: {matched}/{total} orders")
         
-        return df
+        with open(filepath, "r", encoding="utf-8") as f:
+            sql = f.read()
     
     def run_full_reconciliation(self) -> pd.DataFrame:
         """Run complete reconciliation against PSP and GL."""
