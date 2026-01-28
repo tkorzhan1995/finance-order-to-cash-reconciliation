@@ -54,7 +54,13 @@ class ReconciliationEngine:
         return conn
     
     def execute_sql_file(self, filename: str) -> pd.DataFrame:
-        """Execute a SQL file and return results as DataFrame."""
+        for key, filename in files.items():
+            filepath = os.path.join(self.data_dir, filename)
+            try:
+                data[key] = pd.read_csv(filepath)
+            except FileNotFoundError:
+                raise FileNotFoundError(f"Required data file not found: {filepath}")
+            print(f"  Loaded {key}: {len(data[key])} records")
         filepath = os.path.join(self.sql_dir, filename)
         
         with open(filepath, 'r') as f:
