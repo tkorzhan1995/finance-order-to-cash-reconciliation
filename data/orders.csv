@@ -11,3 +11,4 @@ ORD-009,2024-01-19,CUST-109,PROD-B,1,75.00,75.00,7.50,82.50,completed,debit_card
 ORD-010,2024-01-19,CUST-110,PROD-C,1,200.00,200.00,20.00,220.00,completed,credit_card
 ORD-011,2024-01-20,CUST-111,PROD-A,2,50.00,100.00,10.00,110.00,cancelled,credit_card
 ORD-012,2024-01-20,CUST-112,PROD-D,1,300.00,300.00,30.00,330.00,completed,debit_card
+order_id,customer_id,order_date,amount,status

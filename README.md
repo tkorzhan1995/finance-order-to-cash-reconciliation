@@ -18,6 +18,8 @@ This project demonstrates an automated, audit-proof order-to-cash reconciliation
 - SQL-based population definition and matching logic
 - Tolerance and settlement window handling
 - End-to-end reconciliation: Orders → Refunds → PSP Cash → General Ledger
+- End-to-end reconciliation:
+  Orders → Refunds → PSP Cash → General Ledger
 - Daily exception queue with drill-down
 - No black-box automation — full traceability
 
@@ -108,11 +110,8 @@ The system will:
 ### Sample Console Output
 
 ```
-============================================================
 ORDER-TO-CASH RECONCILIATION SYSTEM
-============================================================
 Run Date: 2024-01-20 10:30:00
-============================================================
 
 Loading data files...
   Loaded orders: 12 records
@@ -145,9 +144,7 @@ Generating reports...
   Exception report saved: output/exception_report_20240120.csv
   Summary report saved: output/reconciliation_summary_20240120.csv
 
-============================================================
 RECONCILIATION SUMMARY
-============================================================
 Total Records:      11
 Matched Records:    3
 Exceptions:         8
@@ -161,13 +158,15 @@ Total Variance:     $1421.20
 Exception Breakdown:
   missing_gl_entry: 6
   fee_mismatch: 2
-============================================================
 
 Reconciliation complete!
 ```
 
 ## Output
 
+See `/architecture/o2c_architecture.png`
+
+## Output
 The system produces a daily exception report highlighting:
 - Pending settlements
 - Partial refund mismatches
