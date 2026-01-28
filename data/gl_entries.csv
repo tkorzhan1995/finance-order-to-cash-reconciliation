@@ -1,1 +1,16 @@
+gl_entry_id,entry_date,account_code,account_name,debit,credit,description,reference
+GL-001,2024-01-15,1200,Accounts_Receivable,110.00,0.00,Order revenue,ORD-001
+GL-002,2024-01-15,4000,Sales_Revenue,0.00,100.00,Order revenue,ORD-001
+GL-003,2024-01-15,2200,Sales_Tax_Payable,0.00,10.00,Sales tax,ORD-001
+GL-004,2024-01-15,1200,Accounts_Receivable,82.50,0.00,Order revenue,ORD-002
+GL-005,2024-01-15,4000,Sales_Revenue,0.00,75.00,Order revenue,ORD-002
+GL-006,2024-01-15,2200,Sales_Tax_Payable,0.00,7.50,Sales tax,ORD-002
+GL-007,2024-01-17,1010,Cash,346.78,0.00,PSP settlement,PSP-001
+GL-008,2024-01-17,1200,Accounts_Receivable,0.00,357.50,PSP settlement,PSP-001
+GL-009,2024-01-17,6100,Payment_Processing_Fees,10.72,0.00,PSP fees,PSP-001
+GL-010,2024-01-17,4000,Sales_Revenue,82.50,0.00,Refund,REF-001
+GL-011,2024-01-17,1200,Accounts_Receivable,0.00,82.50,Refund,REF-001
+GL-012,2024-01-18,1010,Cash,161.70,0.00,PSP settlement,PSP-002
+GL-013,2024-01-18,1200,Accounts_Receivable,0.00,165.00,PSP settlement,PSP-002
+GL-014,2024-01-18,6100,Payment_Processing_Fees,3.30,0.00,PSP fees,PSP-002
 entry_id,account,date,debit,credit,description
