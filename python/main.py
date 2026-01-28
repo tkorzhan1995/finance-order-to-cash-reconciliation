@@ -103,7 +103,10 @@ def main():
     except Exception as e:
         print(f"\nERROR: Reconciliation failed!")
         print(f"Error details: {str(e)}")
-        import traceback
+    except KeyboardInterrupt:
+        print("\nReconciliation cancelled by user.")
+        return 130
+    except Exception as e:
         traceback.print_exc()
         return 1
 
